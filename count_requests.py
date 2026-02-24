@@ -4,7 +4,7 @@ import os
 CHECKPOINT_FILE = "checkpoint.json"
 
 def count_requests(checkpoint_path):
-    if not os.path.exists(checkpoint_path):
+    if not os.path.exists(checkpoint_path):  
         print("❌ checkpoint.json not found.")
         return
 
@@ -16,3 +16,4 @@ def count_requests(checkpoint_path):
 
 if __name__ == "__main__":
     count_requests(CHECKPOINT_FILE)
+
